@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Payment Portal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0D2329;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .payment-container {
+            background: linear-gradient(to bottom right, #ffffff, #e3f2fd);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #007bff;
+        }
+        .payment-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .payment-container button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .payment-container button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Portal</h2>
+        <input type="text" id="templeName" placeholder="Enter Temple Name">
+        <input type="text" id="cardNumber" placeholder="Enter Card Number">
+        <input type="text" id="expiryDate" placeholder="Enter Expiry Date (MM/YY)">
+        <input type="text" id="cvv" placeholder="Enter CVV">
+        <button onclick="processPayment()">Pay Now</button>
+    </div>
+
+    <script>
+        function processPayment() {
+            var templeName = document.getElementById('templeName').value;
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+            var cvv = document.getElementById('cvv').value;
+
+            // Here you can add your conditions to redirect to different pages
+            if (templeName === "tirupati") {
+                window.location.href = "https://youtu.be/LV-8IxAdUVk?si=PRBjH_WMlioxr4qQ";
+            } else if(templeName === "kedarnath"){
+            window.location.href = "https://youtu.be/OYiHRowaw2U?si=CJiZBi-6NPgdQvcE";
+
+            }else if(templeName === "siddhivinayak"){
+            window.location.href = "https://youtu.be/_oOQ5UYKAKo?si=3ElUU7nx1d7phZAa";
+
+            }
+            else if(templeName === "golden temple"){
+            window.location.href = "https://youtu.be/m701WKQMeYQ?si=fS7kcZmK9bhJhbZG";}
+            else if(templeName === "lakshmi temple"){
+            window.location.href = "https://youtu.be/IG0SZBfhgW8?si=vCuz2jmQ1u27_TQD";}
+            
+            else {
+                window.location.href = "https://youtu.be/jPH2Tmzzf8U?si=8Hz0-M1cCXPZOF-8";
+            }
+        }
+    </script>
+</body>
+</html>
+

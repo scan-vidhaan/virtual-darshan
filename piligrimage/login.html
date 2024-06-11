@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Bootstrap demo</title>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="limbo">
+        <div class="container">
+          <div class="login mx-auto"> <!-- Added mx-auto for centering -->
+            <img src="lord_hanuman.jpg" width="150px" height="150px" class="rounded mx-auto d-block" alt="...">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" style="color: white;">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" style="color: white;">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <a button type="submit" class="btn btn-danger " href="landing.html">Submit</button></a>
+            </form>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  .header {
+    height: 1000px;
+    width: 100%;
+    background-image: url("sunset.png");
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .login {
+    outline: #0D2329 solid 10px;
+    border: 6px solid #0D2329;
+    border-radius: 24px;
+    max-width: 400px; /* Reduced card width */
+    margin: auto; /* Center horizontally */
+    margin-top: 100px; /* Adjust vertical margin as needed */
+    padding: 20px; /* Increased padding for better spacing */
+    text-align: center;
+    color: #0D2329;
+    background-color: #0D2329;
+    opacity: 0.9;
+  }
+  .limbo {
+    padding-top: 25px;
+  }
+</style>
+</html>
